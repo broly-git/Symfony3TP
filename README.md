@@ -28,5 +28,3 @@ Enfin, éventuellement, ajoutez les fixtures :
 Publiez les assets dans le répertoire web :
 
     php bin/console assets:install web
-
-## Et profitez !
