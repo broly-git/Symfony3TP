@@ -1,0 +1,24 @@
+# app/config/routing.yml
+
+oc_platform:
+    resource: "@OCPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+
+# On inclut également les routes de notre CoreBundle, sans préfixe
+oc_core:
+    resource: "@OCCoreBundle/Resources/config/routing.yml"
+
+#oc_user:
+#    resource: "@OCUserBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+login:
+    path:  /login
+    defaults:
+       _controller: OCUserBundle:Security:login
+
+login_check:
+    path: /login_check
+
+logout:
+    path: /logout
